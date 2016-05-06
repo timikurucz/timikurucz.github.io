@@ -1,0 +1,145 @@
+body {
+  margin: 0 auto;
+  width: 80%;
+  font-family: "Josefin Sans";
+  color: #222;
+}
+
+header {
+  background-image: url(../img/anakin.png);
+  background-size: cover;
+  background-position: center top;
+  height: 400px;
+  font-family: "Abril Fatface";
+  color: #222222;
+  border-top: 5px solid black;
+  line-height: 50px;
+}
+
+h1 {
+  margin-left: 300px;
+  margin-top: 240px;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+h1 span {
+  font-size: 2em;
+}
+
+section {
+  width: 54%;
+  margin: 50px auto 0px auto;
+  font-size: 20px;
+
+  line-height: 30px;
+}
+
+.list1 {
+  margin-top: -25px;
+  list-style: square;
+}
+
+.box {
+  background-color: #444444;
+  width: 65%;
+  margin: 0 auto;
+  padding-top: 0px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.box blockquote {
+  color: white;
+  margin: 0px;
+  padding: 0;
+  font-size: 50px;
+  font-family: "Abril Fatface", serif;
+  font-weight: 100;
+  letter-spacing: -1px;
+  line-height: 100px;
+}
+
+.box blockquote:before {
+  font-size: 2.5em;
+  color: white;
+  content: "“";
+  margin-left: 0px;
+  margin-top: -100px;
+}
+
+.box2 span {
+  padding-left: 55px;
+}
+
+.box3 span {
+  padding-left: 55px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 25px;
+  margin: 20px 0px 40px 0px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.list2 h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.list2 {
+  list-style: none;
+  padding-left: 0;
+}
+.list2 p {
+  font-size: 0.8em;
+  font-weight: 599;
+  line-height: 29px;
+  margin-top: 0;
+}
+
+.list3 p {
+  font-weight: lighter;
+  font-family: "Abril Fatface", serif;
+  font-style: italic;
+}
+
+.list3 ul li {
+  list-style: square;
+  font-size: 0.8em;
+  line-height: 20px;
+}
+
+
+.list3 ul {
+  margin-top: 20px;
+}
+
+
+.list3 h3 {
+  margin: 0;
+}
+
+.list4 h3 {
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.list4 li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+hr {
+  width: 57%;
+  border-top: 3px solid black;
+  margin-top: 40px;
+}
+
+.list5 {
+  list-style: square;
+  font-size: 16px;
+  line-height: 25px;
+}
