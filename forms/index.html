@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+    <link href="style/style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,300italic' rel='stylesheet' type='text/css"/>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <p class="title">Profil</p>
+      <form>
+        <div class="flex-forms-container">
+          <div class="flex-container-left box">
+            <div class="left-forms">
+              <div class="grey-text-box">
+                <p>Szemelyes adatok</p>
+              </div>
+              <div class="name">
+                <label for="name"><span>Nev<span class="required">*</span></span></label>
+                <input class="input-text" type="text" required id="name">
+              </div>
+              <div class="birth-gender">
+                <div class="birth-year">
+                  <label for="birth-year"><span>Szuletesi eved</span></label>
+                  <input class="input-text-year" type="year" id="birth-year" placeholder="pl.1984">
+                </div>
+                <div class="gender">
+                  <label for="gender"><span>Nemed</span> </label>
+                  <input type="radio" id="gender" value="female">no
+                  <input type="radio" id="gender" value="male">ferfi
+                </div>
+              </div>
+              <div class="brands">
+                <p><span>Milyen markakat szeretsz?</span></p>
+                <div class="checkboxes">
+                  <div class="1to5">
+                    <label for="adidas"><input type="checkbox" id="adidas" name="brands1" value="adidas">Adidas</label>
+                    <label for="apple"><input type="checkbox" id="apple" name="brands2" value="apple">Apple</label>
+                    <label for="cocacola"><input type="checkbox" id="cocacola" name="brands3" value="cocacola">Coca-cola</label>
+                    <label for="mazda"><input type="checkbox" id="mazda" name="brands4" value="mazda">Mazda</label>
+                    <label for="nike"><input type="checkbox" id="nike" name="brands5" value="nike">Nike</label>
+                  </div>
+                  <div class="6to10">
+                    <label for="opel"><input type="checkbox" id="opel" name="brands6" value="opel">Opel</label>
+                    <label for="rayban"><input type="checkbox" id="rayban" name="brands7" value="rayban">Ray-ban</label>
+                    <label for="starbucks"><input type="checkbox" id="starbucks" name="brands8" value="starbucks">Starbucks</label>
+                    <label for="tesla"><input type="checkbox" id="tesla" name="brands9" value="tesla">Tesla</label>
+                    <label for="yahoo"><input type="checkbox" id="yahoo" name="brands10" value="yahoo">Yahoo</label>
+                  </div>
+                </div>
+                <p>Tobbet is valaszthatsz!</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex-container-right box">
+            <div class="grey-text-box">
+              <p>Kapcsolat</p>
+            </div>
+            <div class="telephone">
+              <label for="tel"><span>Telefonszam<span class="required">*</span></span></label>
+              <input class="input-text" type=tel id="telephone" name="tel" required placeholder="+36 - -  - - -  - - - -">
+            </div>
+            <div class="email">
+              <label for="email"><span>E-mail cim<span class="required">*</span></span>
+              <input class="input-text" type=email id="email" name="email" required placeholder="nev@domain.hu">
+            </div>
+            <div class="facebook">
+              <label for="facebook"><span>Facebook profilod</span>
+              <input class="input-text" type=url id="facebook" name="facebook" placeholder="http://facebook.com/...">
+            </div>
+            <div class="twitter">
+              <label for="twitter"><span>Twitter profilod</span>
+              <input class="input-text" type=url id="twitter" name="twitter" placeholder="http://facebook.com/...">
+            </div>
+            <div class="house-type">
+              <label for="house-type"><span>Milyen hazban laksz?</span></label>
+              <select class="input-text" id="house-type">
+                <option value="" disabled="disabled" hidden selected>Valassz tipust!</option>
+                <option>Tarsashaz</option>
+                <option>Panel</option>
+                <option>Ikerhaz</option>
+              </select>
+            </div>
+        </div>
+      </div>
+
+        <div class="column-center">
+          <div class="introduction">
+            <label for="introduction"><span>Bemutatkozas<span class="required">*</span></span></label>
+            <textarea id="introduction" placeholder="Irj magadrol par mondatot!" rows=10></textarea>
+          </div>
+          <div class="cv">
+            <span>CV feltoltese</span>
+            <input type="file" id="selectedFile" style="display: none;"/>
+            <input type="button" value="File kivalasztasa" onclick="document.getElementById('selectedFile').click();" />
+          </div>
+          <div class="checkbox-accept">
+            <label for="felhasznalas"><input type="checkbox" id="felhasznalas" name="felhaszn" value="felhaszn">Elfogadom a <a href="">felhasznalasi felteteleket</a>.</label>
+          </div>
+        </div>
+        <div class="buttons-flex">
+          <button class="submit-button" type="submit" value="Submit">MENTES</button>
+          <button class="reset-button" type="reset" value="Reset">URLAP TORLESE</button>
+        </div>
+    </form>
+  </div>
+</body>
