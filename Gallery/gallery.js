@@ -31,7 +31,7 @@ showThumbnailPics();
 // kirajzolja az also thumbnaileket:
 thumbnailContainer.addEventListener('click', function (event) {
   bigImage.setAttribute('src', event.target.src);
-  bigImageIndex = event.target.getAttribute('data-id');
+  bigImageIndex = parseInt(event.target.getAttribute('data-id'));
   imageName.textContent = imagesList[bigImageIndex].name;
   showThumbnailPics();
 });
@@ -64,7 +64,6 @@ var arrowRight = document.createElement('img');
 arrowRight.setAttribute('src', 'images/right.png');
 bigRightArrow.appendChild(arrowRight);
 
-
 function clickArrowRight() {
   if (bigImageIndex === (imagesList.length) - 1) {
     bigImageIndex = 0;
@@ -76,10 +75,13 @@ function clickArrowRight() {
 function clickArrowLeft() {
   if (bigImageIndex > 0) {
     bigImageIndex --;
-  } else { bigImageIndex = (imagesList.length) - 1; }
+  } else {
+    bigImageIndex = (imagesList.length) - 1;
+  }
 }
 
 function showNextBigImage() {
+  console.log(bigImageIndex);
   bigImage.setAttribute('src', (imagesList[bigImageIndex]).src);
   imageName.textContent = (imagesList[bigImageIndex]).name;
 }
