@@ -1,0 +1,29 @@
+.tb {
+  width: 60%;
+  margin: 0 auto;
+}
+
+th {
+  text-align: left;
+}
+
+.hide {
+  display: none;
+}
+
+.addForm {
+  background-color: #fefefe;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  z-index: 500;
+}
+
+.del-button {
+  background-image: url("delete.png");
+  background-size: 100%;
+  height: 40px;
+  width: 40px;
+  float: left;
+}

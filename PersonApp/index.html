@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>List of person app</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+  </head>
+  <body>
+    <div class="content">
+      <button type="button" class="addButton" >Add</button>
+
+      <table class="tb">
+        <thead>
+          <tr>
+            <th>
+              <p>Name</p>
+              <p>(job title)</p>
+            <th>Age</th>
+            <th>Nickname</th>
+            <th>Employee</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody class="tableBody">
+        </tbody>
+      </table>
+
+    <div class="addForm hide">
+      <form>
+        <div>
+          <label for="name">Name</label>
+            <input type="text" class="inputName" placeholder="Your Name">
+        </div>
+
+        <div>
+          <label for="job">Job title</label>
+            <input type="text" class="inputJob" placeholder="Job title">
+        </div>
+
+        <div>
+          <label for="age">Age</label>
+            <input type="number" class="inputAge" placeholder="Age">
+        </div>
+
+        <div>
+          <label for="nickname">Nickname</label>
+            <input type="text" class="inputNickname" placeholder="Nickname">
+        </div>
+
+        <div>
+          <label for="employee">Employee</label>
+          <input class="checkBox" type="checkbox" name="employee" value="">
+        </div>
+      </form>
+      <div>
+        <button type="button" class="submit">Add</button>
+        <button type="button" class="cancel">Cancel</button>
+      </div>
+    </div>
+
+        <h4>Data dump</h4>
+        <textarea name="textarea"></textarea>
+      </div>
+
+    </div>
+    <script src="dom.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
