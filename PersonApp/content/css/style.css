@@ -1,0 +1,22 @@
+/*.persons {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+
+}*/
+
+.content {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.nameHeader {
+  align-items: flex-end;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+th{
+  text-align: left;
+}
