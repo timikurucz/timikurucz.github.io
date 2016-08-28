@@ -1,0 +1,84 @@
+body {
+  background-color: white;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+button {
+  background: url("../img/replay.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 100px;
+  border: none;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.board{
+  margin: 0 auto;
+}
+
+img {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: #00A5A9;
+  height:600px;
+  border-radius: 15px;
+  width:500px;
+  margin: 30px auto;
+}
+
+.cell-row {
+  display: flex;
+  flex-flow: row;
+  margin: 0 auto;
+  width: 310px;
+}
+
+.cell {
+  margin: 2px;
+  height: 100px;
+  width: 100px;
+  display: inline;
+  border-radius: 15px;
+}
+
+.empty-cell {
+  background-color: #CAD100;
+}
+
+.ai {
+  background-image: url("../img/circle.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.user {
+  background-image: url("../img/x.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.game-over {
+  margin: -400px auto;
+  z-index: 500;
+  width: 250px;
+  height: 100px;
+}
+
+.hide {
+  display: none;
+}
+
+.win {
+  opacity: 0.2;
+  z-index: 1;
+}
