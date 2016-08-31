@@ -2,7 +2,7 @@
 
 var WordsApp = angular.module('WordsApp', ['ui.router']);
 
-var dictionary = ['alma', 'banana', 'pear', 'mango', 'pineapple'];
+var dictionary = ['apple', 'banana', 'pear', 'mango', 'pineapple'];
 
 WordsApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/');
