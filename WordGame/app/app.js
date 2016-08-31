@@ -4,7 +4,7 @@ var WordsApp = angular.module('WordsApp', ['ui.router']);
 
 var dictionary = ['alma', 'banana', 'pear', 'mango', 'pineapple'];
 
-WordsApp.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
+WordsApp.config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/');
 
   $stateProvider
@@ -18,7 +18,6 @@ WordsApp.config(function($stateProvider, $urlRouterProvider, $locationProvider) 
       templateUrl: 'views/highscores.html',
       controller: 'HighscoreController'
     })
-  $locationProvider.html5Mode(true);
 });
 
 WordsApp.factory('Config', function() {
